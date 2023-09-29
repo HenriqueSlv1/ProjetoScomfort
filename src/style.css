@@ -41,19 +41,33 @@ header .links ul{
 
 .quem-somosClass {
     display: flex;
-    flex-direction: column;
     background-color: #f9f9f9;
     padding: 20px;
+    padding: 45px;
 }
 
-.quem-somosClass .texto{
-    display: flex;
+.quem-somosClass .texto {
+    flex: 1;
 }
 
+.quem-somosClass .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
 
 .quem-somosClass .imagem img {
-    height: 400px;
-    width: 550px;
-
+    height: 500px;
+    width: auto;
+    margin-left: 60px;
 }
+
+.quem-somosClass .texto p {
+    font-size: 1.125rem; 
+    line-height: 150%;
+}
+
+
+
 
