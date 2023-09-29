@@ -39,12 +39,25 @@ header .links ul{
     text-align: center;
 }
 
+.separator {
+    border-bottom: 1.6px solid #000000; /* Espessura da linha */
+    width: 85%; /* Largura da linha (50% da largura da tela) */
+    margin: 20px auto; /* Espaçamento acima e abaixo da linha, e centraliza a linha */
+}
+
+
+
 .quem-somosClass {
     display: flex;
     background-color: #f9f9f9;
-    padding: 20px;
-    padding: 45px;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out; /* Adicionando a transição para a propriedade transform */
 }
+
+.quem-somosClass:hover {
+    transform: translateX(20px); /* Altere o valor conforme necessário para o deslocamento desejado */
+}
+
 
 .quem-somosClass .texto {
     flex: 1;
@@ -60,7 +73,7 @@ header .links ul{
 .quem-somosClass .imagem img {
     height: 500px;
     width: auto;
-    margin-left: 60px;
+    margin-left: 25px;
 }
 
 .quem-somosClass .texto p {
