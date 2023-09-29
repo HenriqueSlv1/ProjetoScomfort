@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
@@ -22,10 +23,40 @@ header .links ul{
     display: flex;
 }
 
-.a {
-    background-color: rgb(0, 157, 255);
+
+
+.atendimento p {
+    padding-top: 8px;
+}
+
+h5 {
+    font-weight: normal;
 }
 
 footer {
-    padding-left: 50px;
+    background-color: rgb(226, 244, 255);
+    padding-top: 20px;
+}
+
+h4 p{
+    text-align: center;
+}
+
+hr {
+    height: 0.5px; background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+}
+
+#tempo {
+    padding-top: 15px;
+}
+
+svg {
+    width: 80px;
+    height: 80px;
 }
