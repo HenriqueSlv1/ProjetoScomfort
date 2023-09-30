@@ -2,44 +2,119 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 header{
-    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: rgb(23, 113, 97);
+}
+
+header a {
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 32px;
+}
+
+li{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+li a:hover {
+    
+}
+
+.link1 {
+    position: relative;
+    color: white;
+    transition: color 0.3s;
+}
+
+.link1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.link1::after {
+    color: blue;
+}
+
+.link1::after {
+    width: 100%;
+}
+
+header a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+#logo {
+    align-self: center;
+    justify-self: center;
+}
+
+#carrinho {
+    align-self: center;
+    justify-self: center;
+}
+
+#button {
+    display: flex;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-    padding-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
 }
 
-header .links {
-    display: flex;
-    justify-content: space-between;
+#button:hover {
+    background-color: #2980b9;
 }
 
-header .links ul{
-    display: flex;
+header a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
-
-
 
 .atendimento p {
     padding-top: 8px;
 }
 
-h5 {
+footer h5 {
     font-weight: normal;
 }
 
 footer {
     background-color: rgb(226, 244, 255);
-    padding-top: 20px;
+    padding-top: 30px;
+    
 }
 
-h4 p{
+footer h4 p{
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 hr {
@@ -50,13 +125,15 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 150px;
-}
-
-#tempo {
-    padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 svg {
     width: 80px;
     height: 80px;
+    transition: ease 0.3s
+}
+
+svg:hover {
+    background-color: rgb(176, 225, 255)
 }
