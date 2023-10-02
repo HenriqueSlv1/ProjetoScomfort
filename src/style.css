@@ -210,3 +210,51 @@ svg {
 svg:hover {
     fill: #000000; 
 }
+
+
+
+/*----------------*/
+#nossosProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    border: 1px solid rgb(170, 157, 157);
+    background-color: #ececec;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+}
+
+.imgProduto img {
+    max-width: 100%;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid gray;
+}
+
+.infoProduto {
+    margin-top: 10px;
+}
+
+.produtoNome {
+    font-weight: bold;
+}
+
+.produtoPreco {
+    font-weight: bold;
+}
+
+
+
+.precoProduto p {
+    display: flex;
+    justify-content: start;
+    padding-top: 15px;
+    font-weight: bolder;
+}
