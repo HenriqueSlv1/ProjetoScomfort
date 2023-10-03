@@ -164,6 +164,8 @@ li{
     margin-left: 25px;
 }
 
+
+
 .quem-somosClass .texto p {
     font-size: 1.125rem; 
     line-height: 150%;
@@ -214,47 +216,81 @@ svg:hover {
 
 
 /*----------------*/
-#nossosProdutos {
+/*-------------------*/
+
+.sobreNossaEmpresa {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out;
 }
 
-.produto {
-    border: 1px solid rgb(170, 157, 157);
-    background-color: #ececec;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 300px;
-    height: 350px;
+
+.sobreNossaEmpresa .texto {
+    flex: 1;
+    text-align: left; /* Alterado para alinhar o texto à esquerda */
 }
 
-.imgProduto img {
+.sobreNossaEmpresa .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.sobreNossaEmpresa .imagem img {
+    height: 500px;
+    width: auto;
     max-width: 100%;
-    padding: 20px;
-    width: 300px;
-    height: 350px;
-    border: 1px solid gray;
-}
-
-.infoProduto {
-    margin-top: 10px;
-}
-
-.produtoNome {
-    font-weight: bold;
-}
-
-.produtoPreco {
-    font-weight: bold;
+    float: left; /* Posicionar imagem à esquerda */
+    margin-right: 25px; /* Adicionar margem à direita da imagem */
 }
 
 
 
-.precoProduto p {
+.sobreNossaEmpresa .texto p {
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-align: justify; /* Alinhar texto justificado */
+}
+
+
+.sobreNossaEmpresa2 {
     display: flex;
-    justify-content: start;
-    padding-top: 15px;
-    font-weight: bolder;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out; /* Adicionando a transição para a propriedade transform */
+}
+
+.sobreNossaEmpresa2:hover {
+    transform: translateX(20px); /* Altere o valor conforme necessário para o deslocamento desejado */
+}
+
+.sobreNossaEmpresa2 .texto {
+    flex: 1;
+}
+
+.sobreNossaEmpresa2 .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.sobreNossaEmpresa2 .imagem2 img {
+    max-height: 450px; /* Ajuste a altura máxima da imagem conforme necessário */
+    width: auto; /* Ajusta automaticamente a largura mantendo a proporção */
+    max-width: 100%;
+    float: left;
+    margin-right: 25px;
+}
+
+.sobreNossaEmpresa2 .texto {
+    flex: 1; /* Aumente o valor para aumentar a largura do texto */
+}
+
+
+.sobreNossaEmpresa2 .texto p {
+    font-size: 1.125rem; 
+    line-height: 150%;
 }
