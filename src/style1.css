@@ -1,94 +1,27 @@
-* {
-    padding: 0;
-    margin: 0;
+*{
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-header{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    background-color: rgb(23, 113, 97);
+html {
+    scroll-behavior: smooth;
 }
 
-header a {
-    color: white;
-}
-
-header img {
-    width: 100px;
-    height: 80px;
-}
-
-ul {
-    list-style: none;
-    text-align: center;
-    margin: 32px;
-}
-
-li{
+header {
     display: flex;
+    color: white;
     justify-content: center;
-    gap: 30px;
-    font-size: 18px;
-}
-
-li a:hover {
-    
-}
-
-.link1 {
-    position: relative;
-    color: white;
-    transition: color 0.3s;
-}
-
-.link1::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    bottom: -2px;
-    left: 0;
-    transition: width 0.3s;
-}
-
-.link1::after {
-    color: blue;
-}
-
-.link1::after {
-    width: 100%;
-}
-
-header a:hover {
-    transform: scale(1.1);
-    color: black;
-}
-
-#logo {
-    align-self: center;
-    justify-self: center;
-}
-
-#carrinho {
-    align-self: center;
-    justify-self: center;
-}
-
-#button {
-    display: flex;
+    text-align: center;
     align-items: center;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    transition: background-color 0.3s ease;
+    height: 60px; /* Altere a altura conforme desejado */
+    width: 100%;
+    position: absolute;
 }
-
-#button:hover {
-    background-color: #2980b9;
+header img {
+    width: 80px; /* Altere a largura conforme desejado */
+    height: 60px; /* Mantenha a altura proporcional à largura */
+    align-self: flex-start; /* Alinha a imagem verticalmente no centro */
 }
 
 header a img {
@@ -96,44 +29,299 @@ header a img {
     height: 20px;
     margin-right: 10px;
 }
-
-.atendimento p {
-    padding-top: 8px;
+header img{
+    padding-right: 60px;
 }
+
+ul {
+
+    text-align: center;
+    margin: 32px;
+    text-decoration: none;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+
+}
+
+.underline-link {
+    position: relative;
+    color: #ffffff;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-weight: normal;
+
+}
+
+.underline-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ccd5ae;
+    bottom: -2px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.underline-link:hover {
+    color: #f0ecec;
+}
+
+.underline-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+#carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px; /* Adiciona um pouco de espaçamento ao redor do conteúdo */
+    margin-right: 0; /* Remove a margem à direita */
+}
+
+#carrinho a {
+    text-decoration: none;
+    font-weight: initial;
+    color: white;
+    margin-left: 10px; /* Adiciona um espaçamento à esquerda entre a imagem e o texto */
+}
+
+#carrinho img {
+    height: 35px;
+    width: 35px;
+    display: inline-block; /* Certifica-se de que a imagem é exibida como um bloco inline */
+}
+
+
+
+
+
+#logo {
+    align-self: center;
+    justify-self: center;
+}
+
+.tela-principal {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/erik-hansman-PL5VrlAISt4-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tela-principal p {
+    text-align: center;
+}
+
+.separator {
+    border-bottom: 1.6px solid #000000; /* Espessura da linha */
+    width: 85%; /* Largura da linha (50% da largura da tela) */
+    margin: 20px auto; /* Espaçamento acima e abaixo da linha, e centraliza a linha */
+}
+
+
+
+.quem-somosClass {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out; /* Adicionando a transição para a propriedade transform */
+}
+
+.quem-somosClass:hover {
+    transform: translateX(20px); /* Altere o valor conforme necessário para o deslocamento desejado */
+}
+
+
+.quem-somosClass .texto {
+    flex: 1;
+}
+
+.quem-somosClass .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.quem-somosClass .imagem img {
+    height: 500px;
+    width: auto;
+    margin-left: 25px;
+}
+
+
+
+.quem-somosClass .texto p {
+    font-size: 1.125rem; 
+    line-height: 150%;
+}
+
+
+/*------------------------*/
 
 footer h5 {
     font-weight: normal;
 }
 
 footer {
-    background-color: rgb(226, 244, 255);
-    padding-top: 30px;
-    
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    text-align: center;
 }
 
-footer h4 p{
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+footer h4 p {
+    padding: 5px 0;
 }
 
 hr {
-    height: 0.5px; background-color: black;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px 0;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 150px;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
 svg {
-    width: 80px;
-    height: 80px;
-    transition: ease 0.3s
+    width: 40px;
+    height: 40px;
+    fill: #4f4e4e; 
+    transition: ease-in-out 0.3s;
 }
 
 svg:hover {
-    background-color: rgb(176, 225, 255)
+    fill: #000000; 
+}
+
+
+
+/*----------------*/
+/*-------------------*/
+
+.sobreNossaEmpresa {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.sobreNossaEmpresa .texto {
+    flex: 1;
+    text-align: left; /* Alterado para alinhar o texto à esquerda */
+}
+
+.sobreNossaEmpresa .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.sobreNossaEmpresa .imagem img {
+    height: 500px;
+    width: auto;
+    max-width: 100%;
+    float: left; /* Posicionar imagem à esquerda */
+    margin-right: 25px; /* Adicionar margem à direita da imagem */
+}
+
+
+
+.sobreNossaEmpresa .texto p {
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-align: justify; /* Alinhar texto justificado */
+}
+
+
+.sobreNossaEmpresa2 {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out; /* Adicionando a transição para a propriedade transform */
+}
+
+.sobreNossaEmpresa2:hover {
+    transform: translateX(20px); /* Altere o valor conforme necessário para o deslocamento desejado */
+}
+
+.sobreNossaEmpresa2 .texto {
+    flex: 1;
+}
+
+.sobreNossaEmpresa2 .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.sobreNossaEmpresa2 .imagem2 img {
+    max-height: 450px; /* Ajuste a altura máxima da imagem conforme necessário */
+    width: auto; /* Ajusta automaticamente a largura mantendo a proporção */
+    max-width: 100%;
+    float: left;
+    margin-right: 25px;
+}
+
+.sobreNossaEmpresa2 .texto {
+    flex: 1; /* Aumente o valor para aumentar a largura do texto */
+}
+
+
+.sobreNossaEmpresa2 .texto p {
+    font-size: 1.125rem; 
+    line-height: 150%;
+}
+
+
+/*-----------------------*/
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crie três colunas com larguras iguais */
+    gap: 20px; /* Espaçamento entre os produtos */
+    font-weight: bold;
+}
+
+.produto {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto p {
+    margin-top: 10px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
