@@ -11,17 +11,15 @@ html {
 }
 
 header {
-    display: flex;
+    display: grid;
     color: white;
-    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr;
     width: 100%;
     position: absolute;
 }
 header img {
-  
     height: 60px; 
     padding-right: 60px;
-
 }
 
 
@@ -84,7 +82,7 @@ li{
 
 #logo {
     align-self: center;
-    justify-self: center;
+    justify-self: end;
 }
 
 .tela-principal {
@@ -283,7 +281,6 @@ svg:hover {
 
 .produto {
     padding: 14px;
-    margin: px;
     border: 1px solid rgb(216, 216, 216);
     cursor: pointer;
     
@@ -310,4 +307,17 @@ svg:hover {
 .produto:hover img {
     transform: scale(1.05); 
     transition: transform 0.4s ease;
+}
+
+@media screen and (max-device-width: 414px)
+{
+    .produtos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (min-device-width: 415) /*and (max-device-width: 1280px) */
+{
+
 }
