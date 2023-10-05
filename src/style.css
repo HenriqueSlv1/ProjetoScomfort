@@ -16,6 +16,7 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     width: 100%;
     position: absolute;
+    background-color: #00000082;
 }
 header img {
     height: 60px; 
@@ -53,6 +54,7 @@ li{
     width: 100%;
     left: 0;
 }
+
 
 
 #carrinho {
@@ -154,11 +156,12 @@ footer h5 {
 
 footer {
     background-color: #f9f9f9;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 footer h4 p {
     padding: 5px 0;
+    text-align: center;
 }
 
 hr {
@@ -286,6 +289,10 @@ svg:hover {
     
 }
 
+.conteudo .tela-principal p{
+    max-width: 90%;
+}
+
 .produto img {
     display: flex;
     justify-content: center;
@@ -310,24 +317,93 @@ svg:hover {
 }
 
 /*-------------------------*/
-
-.hamburguer {
+.separator {
     display: none;
 }
 
-@media screen and (max-device-width: 414px)
+@media screen and (max-device-width: 480px)
 {
-    .produtos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    header {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    header img {
+        padding-right: 0;
     }
 
     ul {
         display: none;
     }
 
-    .hamburguer {
+    .produtos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+    }
+
+    .produto {
+        padding: 10px;
+    }
+
+    .separator {
+        width: 100%;
+    }
+
+    .tela-principal {
+        background-image: url(./img/erik-hansman-PL5VrlAISt4-unsplash.jpg);
+        height: 280px;
+    }
+
+    .quem-somosClass {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .quem-somosClass img {
+        display: none;
+    }
+
+    .sobreNossaEmpresa {
+        display:flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+
+    .sobreNossaEmpresa .imagem img{
+        height: auto;
+        width: auto;
+    }
+
+    .sobreNossaEmpresa2 {
+        display: none;
+    }
+    
+    .sobreNossaEmpresa2 img {
+        display: none;
+    }
+
+    .separator {
         display: block;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    footer .grid {
+        padding-left: 30px;
+    }
+
+    .conteudo h1 {
+        display: flex;
+        text-align: center;
+    }
+
+    .conteudo {
+        font-size: 13px;
     }
 }
 
