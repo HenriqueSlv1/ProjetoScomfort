@@ -3,12 +3,10 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-
-}
-
-html {
     scroll-behavior: smooth;
 }
+
+/*--------- Header ---------*/
 
 header {
     display: grid;
@@ -18,11 +16,11 @@ header {
     position: absolute;
     background-color: #00000082;
 }
+
 header img {
     height: 60px; 
     padding-right: 60px;
 }
-
 
 ul {
     margin: 32px;
@@ -49,43 +47,28 @@ li{
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-
 .linkHeader:hover::after {
     width: 100%;
     left: 0;
 }
 
-
-
 #carrinho {
     display: flex;
     align-items: center;
-    color: #fff;
-    text-decoration: none;
-    list-style: none;
     padding: 10px;
-    margin-right: 0; 
-}
-
-#carrinho a {
-    text-decoration: none;
-    font-weight: initial;
-    color: white;
-    margin-left: 10px;
 }
 
 #carrinho img {
     height: 35px;
     width: 35px;
-    display: inline-block; 
 }
-
-
 
 #logo {
     align-self: center;
     justify-self: end;
 }
+
+/*--------- Main ---------*/
 
 .tela-principal {
     display: flex;
@@ -109,7 +92,58 @@ li{
     margin: 20px auto; 
 }
 
+.separator {
+    display: none;
+}
 
+.separatorr .separator {
+    display: block;
+}
+
+/*--------- Produtos ---------*/
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.produto {
+    padding: 14px;
+    border: 1px solid rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.conteudo .tela-principal p{
+    max-width: 90%;
+}
+
+.produto img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+}
+
+.produto p {
+    margin-top: 5px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.produto:hover img {
+    transform: scale(1.05); 
+    transition: transform 0.4s ease;
+}
+
+/*--------- Descrições ---------*/
 
 .quem-somosClass {
     display: flex;
@@ -121,7 +155,6 @@ li{
 .quem-somosClass:hover {
     transform: translateX(20px);
 }
-
 
 .quem-somosClass .texto {
     flex: 1;
@@ -140,59 +173,10 @@ li{
     margin-left: 25px;
 }
 
-
-
 .quem-somosClass .texto p {
     font-size: 1.125rem; 
     line-height: 150%;
 }
-
-
-/*------------------------*/
-
-footer h5 {
-    font-weight: normal;
-}
-
-footer {
-    background-color: #f9f9f9;
-    padding: 30px;
-}
-
-footer h4 p {
-    padding: 5px 0;
-    text-align: center;
-}
-
-hr {
-    height: 1px;
-    background-color: #ccc;
-    border: none;
-    margin: 20px 0;
-}
-
-.grid {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-}
-
-svg {
-    width: 40px;
-    height: 40px;
-    fill: #4f4e4e; 
-    transition: ease-in-out 0.3s;
-}
-
-svg:hover {
-    fill: #000000; 
-}
-
-
-
-/*----------------*/
-/*-------------------*/
 
 .sobreNossaEmpresa {
     display: flex;
@@ -222,19 +206,16 @@ svg:hover {
     margin-right: 25px; 
 }
 
-
-
 .sobreNossaEmpresa .texto p {
     font-size: 1.125rem;
     line-height: 150%;
     text-align: justify; 
 }
 
-
 .sobreNossaEmpresa2 {
     display: flex;
     background-color: #f9f9f9;
-    padding: 25px;
+    padding: 25px 25px 0px 25px;
     transition: transform 0.5s ease-in-out; 
 }
 
@@ -272,54 +253,48 @@ svg:hover {
 }
 
 
-/*--------------------*/
+/*--------- Footer ---------*/
 
-.produtos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    font-weight: bold;
+footer {
+    background-color: #f9f9f9;
     padding: 30px;
 }
 
-.produto {
-    padding: 14px;
-    border: 1px solid rgb(216, 216, 216);
-    cursor: pointer;
-    
+footer h5 {
+    font-weight: normal;
 }
 
-.conteudo .tela-principal p{
-    max-width: 90%;
+footer h4 p {
+    padding: 5px 0;
+    text-align: center;
 }
 
-.produto img {
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px 0;
+}
+
+.grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    max-width: 100%; 
+    gap: 20px;
 }
 
-.produto p {
-    margin-top: 5px;
+svg {
+    width: 40px;
+    height: 40px;
+    fill: #4f4e4e; 
+    transition: ease-in-out 0.3s;
 }
 
-.descricao {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 5px;
+svg:hover {
+    fill: #000000; 
 }
 
-.produto:hover img {
-    transform: scale(1.05); 
-    transition: transform 0.4s ease;
-}
-
-/*-------------------------*/
-.separator {
-    display: none;
-}
+/* Responsivo */
 
 @media screen and (max-device-width: 480px)
 {
@@ -405,9 +380,4 @@ svg:hover {
     .conteudo {
         font-size: 13px;
     }
-}
-
-@media screen and (min-device-width: 415) /*and (max-device-width: 1280px) */
-{
-
 }
